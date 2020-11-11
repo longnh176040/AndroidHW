@@ -2,8 +2,11 @@ package com.example.linearlayoutpractice;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.graphics.Color;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.util.Log;
+import android.util.TypedValue;
 import android.view.View;
 import android.widget.TextView;
 
@@ -34,6 +37,9 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if (textView.getText().toString().equals("0") || end) {
                     textView.setText("0");
+                    textView.setTextSize(TypedValue.COMPLEX_UNIT_SP, 20);
+                    textView.setTextColor(Color.GREEN);
+                    textView.setTypeface(null, Typeface.ITALIC);
                     end = false;
                 }
                 else textView.setText(textView.getText() + "0");
