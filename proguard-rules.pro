@@ -19,3 +19,13 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
+# SnakeYAML
+-keep class org.yaml.snakeyaml.** { public protected private *; }
+-keep class org.yaml.snakeyaml.** { public protected private *; }
+-dontwarn org.yaml.snakeyaml.**
+
+# Joda Time
+-dontwarn org.joda.convert.**
+-dontwarn org.joda.time.**
+-keep class org.joda.time.** { *; }
+-keep interface org.joda.time.** { *; }

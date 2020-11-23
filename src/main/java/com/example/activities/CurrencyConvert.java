@@ -1,4 +1,4 @@
-package com.example.linearlayoutpractice;
+package com.example.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -12,6 +12,8 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.example.linearlayoutpractice.R;
 
 import java.util.ArrayList;
 

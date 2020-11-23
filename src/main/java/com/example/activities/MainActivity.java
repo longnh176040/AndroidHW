@@ -1,4 +1,4 @@
-package com.example.linearlayoutpractice;
+package com.example.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,6 +9,8 @@ import android.util.Log;
 import android.util.TypedValue;
 import android.view.View;
 import android.widget.TextView;
+
+import com.example.linearlayoutpractice.R;
 
 public class MainActivity extends AppCompatActivity {
     TextView textView;

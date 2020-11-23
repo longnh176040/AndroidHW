@@ -1,4 +1,4 @@
-package com.example.linearlayoutpractice;
+package com.example.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -10,6 +10,8 @@ import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.RadioGroup;
 import android.widget.TextView;
+
+import com.example.linearlayoutpractice.R;
 
 public class SecondActivity extends AppCompatActivity {
 
