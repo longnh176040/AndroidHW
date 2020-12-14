@@ -1,6 +1,7 @@
 package com.example.activities;
 
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -66,9 +67,8 @@ public class CustomAdapter extends BaseAdapter {
         viewHolder.starButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                boolean check = item.clicked;
-                item.clicked = !check;
-                if (check) {
+                item.clicked = !item.clicked;
+                if (item.clicked) {
                     viewHolder.starButton.setBackgroundResource(R.drawable.star_foreground);
                 } else viewHolder.starButton.setBackgroundResource(R.drawable.ic_launcher_foreground);
                 notifyDataSetChanged();
